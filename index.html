@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Score Keeper</title>
+    <!--LEAVE THESE LINES ALONE, PLEASE! THEY MAKE THE LIVE PREVIEW WORK!-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<style>
+    .winner{
+        color:green;
+    }
+    .loser{
+        color:red;
+    }
+</style>
+<body>
+    <section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is2by1">
+                            <img src="https://brainandmemoryhealth.com/wp-content/uploads/2021/02/Ping_Pong.jpg" alt="">
+                        </figure>
+                    </div>
+                    <header class="card-header">
+                        <h1><b>Game - Ping Pong</b></h1>
+                        <span class="icon">
+                          <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </button>
+                    </header>
+                    <div class="card-content">
+                      <div class="content">
+                        <h1>The Score Keeper</h1>
+                        <h2><span id="p1Display">0</span> to <span id="p2Display">0</span></h2>
+                        <p class="subtitle">Use these button to keep Score</p>
+                        <label for="playto" class="label is-large is-inline">Playing To </label>
+                        <div class="select is-rounded">
+                            <select name="" id="playto">
+                                <option value="3">3</option>
+                                <option value="5">5</option>
+                                <option value="8">8</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                            </select>
+                        </div>
+                        <footer class="card-footer">
+                            <button id="p1button" class="button is-primary card-footer-item">+1 player1</button>
+                            <button id="p2button" class="button is-info card-footer-item">+1 player2</button>                    
+                            <button id="reset" class="button is-danger card-footer-item">reset</button>
+                        </footer>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <script defer src="app1.js"></script> 
+</body>
+
+</html>     
